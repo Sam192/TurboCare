@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddVehicle"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VEHICLE NUMBBER"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/etxtVnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="text"/>
+
+    <RadioGroup
+        android:id="@+id/rgroup"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:id="@+id/rbtnBite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="BIke" />
+
+        <RadioButton
+            android:id="@+id/rbtnCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="Car" />
+    </RadioGroup>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_addRegNo"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_baseline_add" />
+
+
+</LinearLayout>
